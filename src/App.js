@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Switch, Redirect } from 'react-router-dom';
+import { Route, Switch, Redirect, Link } from 'react-router-dom';
 import { Navbar, Nav } from 'react-bootstrap';
 import GreetingPage from './GreetingPage';
 import TodoPage from './TodoPage';
@@ -11,8 +11,8 @@ const App = () => {
       <Navbar expand="lg" style={{fontFamily: 'Literata'}}>
         <Navbar.Brand>My Personal Assistant</Navbar.Brand>
         <Nav>
-          <Nav.Link href="/todo">To-dos</Nav.Link>
-          <Nav.Link href="/">Home</Nav.Link>
+          <Link href="/todo">To-dos</Link>
+          <Link href="/">Home</Link>
         </Nav>
       </Navbar>
       <Switch>
