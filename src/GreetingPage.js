@@ -1,6 +1,9 @@
 import React, { useReducer } from 'react';
 import { Title} from './styles';
 import { Container, Row, Col } from 'react-grid-system';
+import sun from './assets/sun.png';
+import rainy from './assets/rainy.png';
+import snow from './assets/snow.webp';
 
 const GreetingPage = () => {
   function reducer(state, action) {
@@ -27,9 +30,9 @@ const GreetingPage = () => {
   let weatherPic = null;
   if (weather !== null) {
     const pics = {
-      'Clear': <img src='/assets/sun.png' alt='clear' width='30%'/>,
-      'Rain': <img src='/assets/rain.png' alt='rain' width='30%'/>,
-      'Snow': <img src='/assets/snow.webp' alt='snow' width='30%'/>
+      'Clear': <img src={sun} alt='clear' width='30%'/>,
+      'Rain': <img src={rainy} alt='rain' width='30%'/>,
+      'Snow': <img src={snow} alt='snow' width='30%'/>
     };
     weatherPic = pics[weather.weather[0].main];
   }
