@@ -11,8 +11,8 @@ const App = () => {
       <Navbar expand="lg" style={{fontFamily: 'Literata'}}>
         <Navbar.Brand>My Personal Assistant</Navbar.Brand>
         <Nav>
-          <Link href="/todo">To-dos</Link>
-          <Link href="/">Home</Link>
+          <Link to="/todo">To-dos</Link>
+          <Link to="/">Home</Link>
         </Nav>
       </Navbar>
       <Switch>
